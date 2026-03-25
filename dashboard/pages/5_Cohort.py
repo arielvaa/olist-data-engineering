@@ -6,7 +6,7 @@ st.set_page_config(page_title="Retention", layout="wide")
 
 @st.cache_data
 def load_data():
-    conn = duckdb.connect("../olist.db")
+    conn = duckdb.connect("olist.db")
     return conn.execute("""
         SELECT 
             c.customer_unique_id,

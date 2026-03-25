@@ -1,5 +1,10 @@
 import streamlit as st
 
+import os
+
+if not os.path.exists("olist.db"):
+    import init_db
+
 st.set_page_config(
 	page_title="Brazilian E-Commerce Dashboard",
 	layout="wide"

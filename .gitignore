@@ -1,4 +1,5 @@
 venv/
 __pycache__/
 *.pyc
+olist.db
 .env

@@ -6,7 +6,7 @@ st.set_page_config(page_title="Product Intelligence", layout="wide")
 
 @st.cache_data
 def load_data(query):
-    conn = duckdb.connect("../olist.db")
+    conn = duckdb.connect("olist.db")
     return conn.execute(query).fetchdf()
 
 df = load_data("""
